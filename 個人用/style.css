@@ -1,0 +1,132 @@
+/* ***  Base  *** */
+#container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+/* #question_dev {
+    flex-wrap: wrap;
+} */
+input[type=checkbox] {
+    display: none;
+}
+
+
+/* ***  共通  *** */
+.selecter {
+    width: 100%;
+    margin: 5px;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#like {
+    background: #349ab9;
+}
+#no_like {
+    background: #ca6767;
+}
+#never_eaten {
+    background: #aaa;
+}
+.backcolor_blue {
+    background: #d7edeb;
+}
+.backcolor_red {
+    background: #ede2d7;
+}
+.backcolor_gray {
+    background: #ebebeb;
+}
+
+.default {
+  box-sizing: border-box;
+  transition: background-color 0.1s linear;
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 8px 0;
+  padding: 12px 12px 12px 42px;
+  border-radius: 8px;
+  background-color: #f6f7f8;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.default:hover {
+  background-color: #e2edd7;
+}
+.default:hover:after {
+  border-color: #53b300;
+}
+.default:before {
+  transition: opacity 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 21px;
+  display: block;
+  margin-top: -7px;
+  width: 5px;
+  height: 9px;
+  border-right: 3px solid #53b300;
+  border-bottom: 3px solid #53b300;
+  content: '';
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+.like_blue:hover {
+  background-color: #d7edeb;
+}
+.like_blue:hover:after {
+  border-color: #007ab3;
+}
+.like_blue:before {
+    border-right: 3px solid #007ab3;
+    border-bottom: 3px solid #007ab3;
+}
+
+.nolike_red:hover {
+  background-color: #ede2d7;
+}
+.nolike_red:hover:after {
+  border-color: #b31b00;
+}
+.nolike_red:before {
+    border-right: 3px solid #b31b00;
+    border-bottom: 3px solid #b31b00;
+}
+
+.never_gray:hover {
+  background-color: #ebebeb;
+}
+.never_gray:hover:after {
+  border-color: #999999;
+}
+.never_gray:before {
+    border-right: 3px solid #999999;
+    border-bottom: 3px solid #999999;
+}
+
+.default:after {
+  transition: border-color 0.1s linear;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  display: block;
+  margin-top: -10px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #bbb;
+  border-radius: 6px;
+  content: '';
+}
+input[type=checkbox]:checked + .default:before {
+  opacity: 1;
+}

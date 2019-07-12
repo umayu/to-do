@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+<body>
+
+    <div id="container">
+        <h3>Please choose what you like and what you don't like</h3>
+        <p>※ I don't know English ...</p>
+        <p>※ This site is not responsive enable.</p>
+
+        <div class="button">
+            <!-- cssでボタンみたくやろう -->
+            <p class="selecter" id="like">Like :)</p>
+            <p class="selecter" id="no_like">Don't like :(</p>
+            <p class="selecter" id="never_eaten">I've never eaten it</p>
+        </div>
+
+        <form action="#" method="GET" name="form" id="form">
+            <div id="question_dev">
+                <input type="checkbox" name="carrot" id="carrot" value="">
+                <label for="carrot" class="default">Carrot（人参）</label>
+
+                <input type="checkbox" name="burdock" id="burdock" value="">
+                <label for="burdock" class="default">Burdock（ごぼう）</label>
+
+                <input type="checkbox" name="cabbage" id="cabbage" value="">
+                <label for="cabbage" class="default">Cabbage（きゃべつ）</label>
+
+                <input type="checkbox" name="lotus_root" id="lotus_root" value="">
+                <label for="lotus_root" class="default">Lotus root（れんこん）</label>
+
+                <input type="checkbox" name="spinach" id="spinach" value="">
+                <label for="spinach" class="default">Spinach（ほうれん草）</label>
+
+                <input type="checkbox" name="green_pepper" id="green_pepper" value="">
+                <label for="green_pepper" class="default">Green pepper（ピーマン）</label>
+
+                <input type="checkbox" name="eggplant" id="eggplant" value="">
+                <label for="eggplant" class="default">Eggplant（なす）</label>
+
+                <input type="checkbox" name="pork" id="pork" value="">
+                <label for="pork" class="default">Pork（豚肉）</label>
+
+                <input type="checkbox" name="beef" id="beef" value="">
+                <label for="beef" class="default">Beef（牛肉）</label>
+
+                <input type="checkbox" name="chicken" id="chicken" value="">
+                <label for="chicken" class="default">Chicken（鶏肉）</label>
+            </div>
+        </form>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
